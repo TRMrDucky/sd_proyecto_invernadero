@@ -20,9 +20,12 @@ def enviar_datos(payload, es_binario=False):
 def simular_sensores():
     
     while True:
-        temp = random.uniform(15.0, 35.0) 
+        temp = random.uniform(5.0, 50.0) 
         hum = random.uniform(40.0, 80.0)
-        sensor_id = random.randint(1, 10)
+        
+        # --- LÍNEA CORREGIDA ---
+        # Ahora solo genera IDs del 1 al 5 para coincidir con tu BD
+        sensor_id = random.randint(1, 5)
 
         if random.choice([True, False]):
             data = {
