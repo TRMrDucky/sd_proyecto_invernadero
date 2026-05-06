@@ -1,6 +1,6 @@
 # sd_proyecto_invernadero
 ##Integrandes:
-Abril J. Reyes - 0000025
+Abril J. Reyes - 00000253017
 Danna M. Chávez - 0000024
 José R. Reynaga - 00000253020
 Jorge C. - 0000025
