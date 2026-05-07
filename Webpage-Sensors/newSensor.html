@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="formStyle.css" />
+        <title>Invernadero ITSON | Registro de sensor</title>
+    </head>
+    <body>
+        <div class="new-sensor-form">
+            <form class="sensor-form" method="post" action="newSensor.js">
+                <h2 class="form-title">Registrar Sensor</h2>
+
+                <div class="form-group">
+                    <label class="form-label">Marca</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Ej. ESP32"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Modelo</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Ej. DHT11"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Ubicación</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Zona norte"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Estado</label>
+
+                    <select class="form-select">
+                        <option>Activo</option>
+                        <option>Inactivo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Invernadero</label>
+                    <select class="form-select">
+                        <option>Invernadero 01</option>
+                    </select>
+                </div>
+
+                <button class="submit-btn">Registrar Sensor</button>
+            </form>
+        </div>
+    </body>
+</html>

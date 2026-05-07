@@ -1,189 +1,187 @@
-
 @import url("global.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
-  font-family: "Inter",sans-serif;
+* {
+    font-family: "Inter", sans-serif;
 }
-body{
-  background-color: var(--background-indigo);
-  margin:30px 100px 100px 100px;
-}
-
-.menu-panel{
-  overflow: hidden;
+body {
+    background-color: var(--background-indigo);
+    margin: 30px 100px 100px 100px;
 }
 
-.main-header{
-  display: flex;
-  justify-content: center;
+.menu-panel {
+    overflow: hidden;
 }
 
-a{
-  text-decoration: none;
+.main-header {
+    display: flex;
+    justify-content: center;
 }
 
-.title{
-  color:var(--textIndigo);
-  font-weight: normal;
-  font-size: 3em;
-  margin-bottom: 80px;
+a {
+    text-decoration: none;
 }
 
-
-.menu-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  justify-content: space-between;
+.title {
+    color: var(--textIndigo);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 80px;
 }
 
-.option-pane{
-  width: 500px;
-  height: 400px;
-  background-color: var(--main-indigo);
-  border-radius: 20px;
-  color: var(--textIndigo);
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.25),
-  0 0 20px rgba(174,184,254,0.15);
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.option-pane:hover{
-  background-color: var(--textIndigo);
-  color: var(--white);
-  transition: 0.5s;
-  transform: translateY(-12px);
+.option-pane {
+    width: 500px;
+    height: 400px;
+    background-color: var(--main-indigo);
+    border-radius: 20px;
+    color: var(--textIndigo);
 
-  box-shadow:
-  0 20px 40px rgba(0,0,0,0.35),
-  0 0 35px rgba(174,184,254,0.35);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(174, 184, 254, 0.15);
+}
+
+.option-pane:hover {
+    background-color: var(--textIndigo);
+    color: var(--white);
+    transition: 0.5s;
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(174, 184, 254, 0.35);
 }
 
 .material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48;
+    font-family: "Material Symbols Outlined";
+    font-variation-settings:
+        "FILL" 1,
+        "wght" 700,
+        "GRAD" 0,
+        "opsz" 48;
 
-  font-size: 500px;
+    font-size: 500px;
 }
 
-.sensor-cataloge{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+.sensor-cataloge {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.sensor-card{
-  width: 300px;
-  height: 450px;
-  background-color: var(--main-indigo);
-  border-radius: 20px;
-  color: var(--textIndigo);
+.sensor-card {
+    width: 300px;
+    height: 450px;
+    background-color: var(--main-indigo);
+    border-radius: 20px;
+    color: var(--textIndigo);
 
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  box-shadow:
-  0 10px 30px rgba(0,0,0,0.25),
-  0 0 20px rgba(174,184,254,0.15);
-}
-
-.sensor-card:hover{
-  background-color: var(--textIndigo);
-  color: var(--white);
-  transition: 0.5s;
-  transform: translateY(-12px);
-
-  box-shadow:
-  0 20px 40px rgba(0,0,0,0.35),
-  0 0 35px rgba(174,184,254,0.35);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        0 0 20px rgba(174, 184, 254, 0.15);
 }
 
-#last-update{
-  font-size: 13px;
+.sensor-card:hover {
+    background-color: var(--textIndigo);
+    color: var(--white);
+    transition: 0.5s;
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 0 35px rgba(174, 184, 254, 0.35);
 }
 
-.sensor-action-buttons{
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+#last-update {
+    font-size: 13px;
+}
+
+.sensor-action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .update-btn,
-.delete-btn{
-  border: none;
-  padding: 10px 18px;
-  border-radius: 12px;
-  cursor: pointer;
+.delete-btn {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
 
-  font-size: 14px;
-  font-weight: 600;
+    font-size: 14px;
+    font-weight: 600;
 
-  transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 
-.update-btn{
-  background-color: var(--textIndigo);
-  color: var(--white);
+.update-btn {
+    background-color: var(--textIndigo);
+    color: var(--white);
 }
 
-.update-btn:hover{
-  transform: translateY(-3px);
-  background-color: var(--light-indigo);
-  color: var(--textIndigo);
+.update-btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--light-indigo);
+    color: var(--textIndigo);
 }
 
-.delete-btn{
-  background-color: var(--red);
-  color: white;
+.delete-btn {
+    background-color: var(--red);
+    color: white;
 }
 
-.delete-btn:hover{
-  transform: translateY(-3px);
+.delete-btn:hover {
+    transform: translateY(-3px);
 }
 
-.data{
-  width: 80%;
-  margin-top: 10px;
+.data {
+    width: 80%;
+    margin-top: 10px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.data-row{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 10px 14px;
-  border-radius: 12px;
+    padding: 10px 14px;
+    border-radius: 12px;
 
-  background-color: rgba(255,255,255,0.06);
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
-.data-label{
-  font-weight: 600;
-  opacity: 0.95;
+.data-label {
+    font-weight: 600;
+    opacity: 0.95;
 }
 
-.data-value{
-  font-weight: bold;
-  font-size: 1.1em;
+.data-value {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
-#anormal-state-sensor{
-  background-color: var(--alert-red);
-  color: white;
+#anormal-state-sensor {
+    background-color: var(--alert-red);
+    color: white;
 }
