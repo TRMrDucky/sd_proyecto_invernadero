@@ -1,7 +1,7 @@
 # sd_proyecto_invernadero
-##Integrandes:
+##Integrantes:
 Abril J. Reyes - 00000253017
 Danna M. Chávez - 0000024
 José R. Reynaga - 00000253020
-Jorge C. - 0000025
+Jorge Cuevas - 00000252274
 Ari R. Montoya - 00000252825
