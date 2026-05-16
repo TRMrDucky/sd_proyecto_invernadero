@@ -62,6 +62,7 @@ def evaluar_alarmas_db(sensor_id, id_metrica, temperatura, cliente_mqtt):
         resultado = alarma_repo.evaluar(alr['id'], id_metrica)
         disparada = resultado.get("alarma_disparada", 0)
         
+        
         if disparada == 1:
             # Construimos el mensaje para el Servidor de Correo
             alarma_payload = {
