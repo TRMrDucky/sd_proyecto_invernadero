@@ -2,8 +2,7 @@
 #  FUNCIÓN PRINCIPAL DE RESET
 # =====================================================================
 
-
-import mysql
+import mysql # pip install mysql-connector-python
 
 from BD.invernaderoDB import *
 from BD.invernaderoDB import _TABLAS
