@@ -3,7 +3,7 @@
 # =====================================================================
 
 import mysql # pip install mysql-connector-python
-
+import utils.encryptation as encryptation
 from BD.invernaderoDB import *
 from BD.invernaderoDB import _TABLAS
 from BD.invernaderoDB import _TRIGGERS
@@ -305,6 +305,7 @@ class AlarmaRepo:
 class UsuarioRepo:
     def crear(self, nombre: str, email: str, telefono: str) -> str:
         nid = str(uuid.uuid4())
+        #TODO : agregar campo password a la tabla usuario y usar encryptation.hash_password() aquí
         with get_conn() as c, get_cursor(c) as cur:
             cur.execute(
                 "INSERT INTO usuario (id,nombre,email,telefono) VALUES (%s,%s,%s,%s)",
