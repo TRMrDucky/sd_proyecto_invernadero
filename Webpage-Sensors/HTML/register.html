@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - ITSON Invernadero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-blue-700 tracking-wide">ITSON</h1>
+            <p class="text-sm text-gray-500 font-semibold">Sistemas Distribuidos - Nuevo Usuario</p>
+        </div>
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-4 text-center">Crear Cuenta</h2>
+        
+        <form id="registerForm" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+                <input type="text" id="nombre" required placeholder="Juan Pérez"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                <input type="email" id="email" required placeholder="usuario@itson.edu.mx"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Teléfono</label>
+                <input type="tel" id="telefono" required placeholder="6441234567"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Contraseña</label>
+                <input type="password" id="password" required placeholder="••••••••"
+                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-sm">
+            </div>
+            <button type="submit" 
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                Registrar en el Clúster
+            </button>
+        </form>
+
+        <div class="mt-4 text-center">
+            <a href="index.html" class="text-sm text-blue-600 hover:underline">¿Ya tienes cuenta? Inicia sesión aquí</a>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-sm font-medium text-gray-700 mb-2">Estado de la Transacción:</h3>
+            <div id="responseConsole" class="p-3 bg-gray-900 text-green-400 font-mono text-xs rounded-md h-32 overflow-y-auto whitespace-pre-wrap">
+Listo para procesar altas...
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/register.js"></script>
+</body>
+</html>
